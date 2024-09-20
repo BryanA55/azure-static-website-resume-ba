@@ -6,52 +6,64 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    font-size: 18px; /* Increase font size */
 }
 
 header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0; /* Increased padding */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em; /* Larger header text */
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 20px auto; /* Auto margin to center */
+    padding: 30px; /* Increased padding */
     background: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Larger shadow for emphasis */
+    max-width: 90%; /* Take up more space on the screen */
 }
 
 h2 {
     color: #444;
+    font-size: 1.8em; /* Larger section headings */
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
 
 ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 30px; /* More space for lists */
+    font-size: 1.2em;  /* Slightly larger list items */
 }
 
 .job {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* More space between job sections */
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px; /* Larger footer padding */
     background-color: #333;
     color: white;
+    font-size: 1.2em; /* Larger footer text */
 }
 
+/* Responsive Design */
 @media (min-width: 768px) {
     body {
-        width: 700px;
+        width: 90%; /* Take up 90% of the screen width on larger screens */
+        max-width: 1200px; /* But still limit the width for readability */
         margin: 0 auto;
+    }
+
+    section {
+        max-width: 1000px; /* Adjust section width for larger screens */
     }
 }
